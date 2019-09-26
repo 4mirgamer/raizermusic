@@ -21,7 +21,7 @@ module.exports = {
         .setAuthor('Songs queue.', message.guild.iconURL)
         .setDescription(queue.songs.slice(1).map((song) => `${++num}) **${song.title.length > 60 ? song.title.slice(0, parseInt("-" + `${song.title.length - (song.title.length - 60)}`)) + "..." : song.title}**`).slice(0, 10).join('\n'))
         .addField('Now playing', queue.songs[0].title)
-        .setFooter('Built with ❤ by Rayzer 乡')
+        .setFooter('Holland Server')
         .setColor('#36393E')
         .setThumbnail(message.author.displayAvatarURL);
         let msg = await message.channel.send(embed);
