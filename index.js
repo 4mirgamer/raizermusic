@@ -10,13 +10,13 @@ client.login(config.token).then(() => {
     client.queue = {};
     client.embeds = {
         error: (errorString) => {
-            return new RichEmbed().setColor('RED').setAuthor(errorString + ' ❌', client.guilds.first().iconURL).setFooter('Built with ❤ by Rayzer 乡');
+            return new RichEmbed().setColor('RED').setAuthor(errorString + ' ❌', client.guilds.first().iconURL).setFooter('Holland Server');
         },
         success: (successString) => {
-            return new RichEmbed().setColor('GREEN').setAuthor(successString + ' ✅', client.guilds.first().iconURL).setFooter('Built with ❤ by Rayzer 乡');
+            return new RichEmbed().setColor('GREEN').setAuthor(successString + ' ✅', client.guilds.first().iconURL).setFooter('Holland Server');
         },
         message: (messageString) => {
-            return new RichEmbed().setColor('GREEN').setAuthor(messageString, client.guilds.first().iconURL).setFooter('Built with ❤ by Rayzer 乡');
+            return new RichEmbed().setColor('GREEN').setAuthor(messageString, client.guilds.first().iconURL).setFooter('Holland Server');
         }
     };
     fs.readdir('./src/commands', (error, files) => {
